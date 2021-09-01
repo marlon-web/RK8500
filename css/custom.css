@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "nexa_light";
+    src: url("../fonts/Nexa_Light.otf");
+}
+
+@font-face {
+    font-family: "nexa_bold";
+    src: url("../fonts/Nexa_Bold.otf");
+}
+
+.nexa-light {
+    font-family: "nexa_light";
+}
+.nexa-bold {
+    font-family: "nexa_bold";
+}
+
+.min-w-1-of-3 {
+    min-width: calc(100% / 3);
+}
+
+#splash {
+    background-image: url("../images/background-top-header-quadrado.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+#topbar::before {
+    content: '';
+    position:absolute;
+    left:0;
+    bottom: -19px;
+    width: 100%;
+    height: 20px;
+    background: #fff;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+}
+#control-section::before {
+    content: '';
+    position:absolute;
+    left:0;
+    top: -19px;
+    width: 100%;
+    height: 20px;
+    background: #2C0F4F;/**/;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    z-index:2;
+}
+#control-section::after {
+    content: '';
+    position:absolute;
+    left:0;
+    bottom: -19px;
+    width: 100%;
+    height: 20px;
+    background:#2C0F4F;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    z-index:2;
+}
+#console-image {
+    z-index: 5;
+}
+.channel {
+    margin-bottom: 30px;
+}
+.channel img {
+    max-width: 110px;
+}
+.channel h3 {
+    font-size: 22px;
+}
+#room {
+    background: url("../images/background-secao-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+#caixa-roxa {
+    transform: scale(1.1);
+}
+
+#search-channels {
+    background: #2D2926;
+}
+
+#search-channels::before {
+    content: '';
+    position:absolute;
+    left:0;
+    top: -19px;
+    width: 100%;
+    height: 20px;
+    background: #2D2926;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    z-index:2;
+}
+@media (min-width: 768px) {
+    #topbar::before {
+        content: '';
+        position:absolute;
+        left:0;
+        width: 100%;
+        height: 40px;
+        bottom:-39px;
+        background: #fff;
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+    }
+
+    #control-section::before {
+        content: '';
+        position:absolute;
+        left:0;
+        top: -49px;
+        width: 100%;
+        height: 50px;
+        background: #2C0F4F;
+        clip-path: polygon(0 0, 0 100%, 100% 100%);
+        z-index:3;
+    }
+
+    #control-section::after {
+        content: '';
+        position:absolute;
+        left:0;
+        bottom: -49px;
+        width: 100%;
+        height: 50px;
+        background: #2C0F4F;
+        clip-path: polygon(100% 0, 0 0, 0 100%);
+        z-index:3;
+    }
+
+    #splash img {
+        transform: scale(1.17);
+        z-index:5;
+    }
+
+    #console-image {
+        transform: scale(1.5);
+        top: -170px;
+    }
+    .channel {
+        min-width: calc(90% / 2);
+        max-width: calc(90% / 2);
+
+        align-items: flex-start;
+
+    }
+
+    #search-channels::before {
+        content: '';
+        position:absolute;
+        left:0;
+        top: -49px;
+        width: 100%;
+        height: 50px;
+        background: #2D2926;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+        z-index:2;
+    }
+
+    #room {
+        background: url("../images/background-secao-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center 30%;
+        background-size: cover;
+    }
+}
+@media (min-width: 950px) {
+    .channel {
+        min-width: calc(90% / 3);
+        max-width: calc(90% / 3);
+
+        align-items: flex-start;
+
+    }
+
+    #room {
+        background: url("../images/imagem-meio-tv-ambiente.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #room-purple-box-desk {
+        margin-top: 520px;
+    }
+    #console-image {
+        transform: scale(2.0);
+        top: -170px;
+    }
+}
