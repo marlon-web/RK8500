@@ -183,6 +183,7 @@
     }
     #room-purple-box-desk {
         margin-top: 520px;
+        max-width: 900px;
     }
     #console-image {
         transform: scale(2.0);
